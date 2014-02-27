@@ -107,7 +107,7 @@ body {
 }
 @font-face {
 	font-family: "Imitation";
-  	src: url("IMIT.TTF");
+  	src: url("../fonts/IMIT.TTF");
 }
 #zoom {
 }
