@@ -98,7 +98,7 @@ textarea {
    ========================================================================== */
 @charset "UTF-8";
 body {
-  	background:url(img/bg.jpg);
+  	background:url(../img/bg.jpg);
 	padding-top: 50px;
 }
 .starter-template {
