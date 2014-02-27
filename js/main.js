@@ -170,6 +170,20 @@ function ZoomView(container, element) {
 	container.bind("drag", $.proxy(dragview.OnDrag, dragview));
 	container.bind("dragend", $.proxy(dragview.OnDragEnd, dragview));
 	setInterval($.proxy(dragview.WatchDrag, dragview), 10);
+	
+        function transform(e) {
+            //We're going to scale the X and Y coordinates by the same amount
+            var cssScale = "scaleX("+ scaleFactor +") scaleY("+ scaleFactor +") rotateZ("+ e.rotation +"deg)";
 
+            element.css({
+                webkitTransform: cssScale,
+                webkitTransformOrigin: cssOrigin,
+
+                transform: cssScale,
+                transformOrigin: cssOrigin,
+            });
+
+            
+	}
 
 }
